@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>SpotiMy</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- <script src="./tesi.js"></script> -->
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <header class="headerBar dark">
+      <div class="appName">SpotiMy</div>
+    </header>
+
+    <div id="tela1" class="component">
+      <div class="componentHeader">
+        <h1 class="componentTitle" id="estado">Playlist</h1>
+        <button id="btnAdd" class="button primary">
+          <img src="./assets/plus1.png" />
+        </button>
+      </div>
+      <div class="componentContent">
+        <div id="blank">
+          <img src="./assets/headphone.png" />
+          <p>Sem músicas por aqui.</p>
+        </div>
+        <ul id="playlist" class="list hidden"></ul>
+      </div>
+    </div>
+
+    <div id="tela2" class="component hidden">
+      <div class="componentHeader">
+        <h1 class="componentTitle">Nova música</h1>
+      </div>
+      <div class="componentContent">
+        <div class="field">
+          <label for="inputArtist">Artista:</label>
+          <input id="inputArtist" type="text" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="inputMusic">Música:</label>
+          <input id="inputMusic" type="text" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="inputUrl">Url:</label>
+          <input id="inputUrl" type="text" autocomplete="off" />
+        </div>
+        <div class="buttonGroup mt1 end">
+          <button id="btnCanc1" class="button quarter light">Cancelar</button>
+          <button id="btnNew" class="button quarter primary" disabled>Incluir</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="tela3" class="component hidden">
+      <div class="componentHeader">
+        <h1 class="componentTitle">Alteração da música</h1>
+      </div>
+      <div class="componentContent">
+        <div class="field">
+          <label for="inputChangeArtist">Artista:</label>
+          <input id="inputChangeArtist" type="text" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="inputChangeMusic">Música:</label>
+          <input id="inputChangeMusic" type="text" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="inputChangeUrl">Url:</label>
+          <input id="inputChangeUrl" type="text" autocomplete="off" />
+        </div>
+        <div class="buttonGroup end mt1">
+          <button id="btnCanc2" class="button quarter light">Cancelar</button>
+          <button id="btnAlt" class="button quarter primary">Alterar</button>
+        </div>
+        <div class="buttonGroup end mt3">
+          <button id="btnDel" class="button quarter danger">Apagar musica</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
